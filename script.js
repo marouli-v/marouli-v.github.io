@@ -1,4 +1,3 @@
-<script>
 
 function handleOrientation(event) {
   updateFieldIfNotNull('Orientation_a', event.alpha);
@@ -74,5 +73,3 @@ window.addEventListener('userproximity', function(event) {
    document.getElementById("UserProximity").innerHTML="UserProximity: "+event.near;
 });
 */
-
-</script>
