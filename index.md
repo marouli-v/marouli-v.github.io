@@ -1,4 +1,2 @@
-<iframe src="https://www.e-shop.gr/" style="height:200px;width:300px;" title="Eshop"></iframe>
-<iframe src="http://plaisio.gr/" style="height:200px;width:300px;" title="Plaisio"></iframe>
-<iframe src="https://www.public.gr/" style="height:200px;width:300px;" title="Public"></iframe>
-<iframe src="https://www.skroutz.gr/" style="height:200px;width:300px;" title="Skroutz"></iframe>
+<iframe src="https://www.example.com" style="height:200px;width:300px;" title="example"></iframe>
+<iframe src="https://en.wikipedia.org/wiki/Main_Page" style="height:200px;width:300px;" title="wiki"></iframe>
