@@ -5,12 +5,11 @@
    <pr>Testing Sensors</pr>
    <script>
      window.addEventListener("devicemotion", function(event) {
-    // Process event.acceleration, event.accelerationIncludingGravity,
-    // event.rotationRate and event.interval
+    
       console.log('devicemotion.event.acceleration', event.acceleration.x , event.acceleration.y , event.acceleration.z);
       console.log('devicemotion.event.accelerationIncludingGravity', event.accelerationIncludingGravity.x , event.accelerationIncludingGravity.y, event.accelerationIncludingGravity.z);
       console.log('devicemotion.event.rotationRate', event.rotationRate.alpha ,event.rotationRate.beta ,event.rotationRate.gamma); 
-      console.log('devicemotion.event.interval', event.interval); 
+      //console.log('devicemotion.event.interval', event.interval); 
       
 }, true);
 
