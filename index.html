@@ -7,18 +7,13 @@
      window.addEventListener("devicemotion", function(event) {
     // Process event.acceleration, event.accelerationIncludingGravity,
     // event.rotationRate and event.interval
-      console.log('devicemotion.event.acceleration', event.acceleration);
-      console.log('devicemotion.event.acceleration', event.accelerationIncludingGravity);
-      console.log('devicemotion.event.rotationRate', event.rotationRate); 
+      console.log('devicemotion.event.acceleration', event.acceleration.x , event.acceleration.y , event.acceleration.z);
+      console.log('devicemotion.event.accelerationIncludingGravity', event.accelerationIncludingGravity.x , event.accelerationIncludingGravity.y, event.accelerationIncludingGravity.z);
+      console.log('devicemotion.event.rotationRate', event.rotationRate.alpha ,event.rotationRate.beta ,event.rotationRate.gamma); 
       console.log('devicemotion.event.interval', event.interval); 
+      
 }, true);
-    window.addEventListener("deviceorientation", function(event) {
-     // process event.alpha, event.beta and event.gamma     
-     console.log('deviceorientation.alpha', event.alpha);
-     console.log('deviceorientation.beta', event.beta);
-     console.log('deviceorientation.beta', event.beta);
 
-}, true);
     </script>
   </body>
 </html>
