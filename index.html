@@ -4,20 +4,21 @@
   <body>
    <pr>Testing Sensors</pr>
    <script>
-     window.addEventListener("devicemotion", handleMotion);
-     function handleMotion(event) {
-          console.log('Accelerometer_gx', event.accelerationIncludingGravity.x);
-          console.log('Accelerometer_gy', event.accelerationIncludingGravity.y);
-          console.log('Accelerometer_gz', event.accelerationIncludingGravity.z);
+     window.addEventListener("devicemotion", function(event) {
+    // Process event.acceleration, event.accelerationIncludingGravity,
+    // event.rotationRate and event.interval
+      console.log('devicemotion.event.acceleration', event.acceleration);
+      console.log('devicemotion.event.acceleration', event.accelerationIncludingGravity);
+      console.log('devicemotion.event.rotationRate', event.rotationRate); 
+      console.log('devicemotion.event.interval', event.interval); 
+}, true);
+    window.addEventListener("deviceorientation", function(event) {
+     // process event.alpha, event.beta and event.gamma     
+     console.log('deviceorientation.alpha', event.alpha);
+     console.log('deviceorientation.beta', event.beta);
+     console.log('deviceorientation.beta', event.beta);
 
-          console.log('Accelerometer_x', event.acceleration.x);
-          console.log('Accelerometer_y', event.acceleration.y);
-          console.log('Accelerometer_z', event.acceleration.z);
-
-          console.log('Gyroscope_z', event.rotationRate.alpha);
-          console.log('Gyroscope_x', event.rotationRate.beta);
-          console.log('Gyroscope_y', event.rotationRate.gamma);
-    }
+}, true);
     </script>
   </body>
 </html>
