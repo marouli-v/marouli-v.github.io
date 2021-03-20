@@ -3,5 +3,21 @@
  </head>
   <body>
    <pr>Testing Sensors</pr>
+   <script>
+     window.addEventListener("devicemotion", handleMotion);
+     function handleMotion(event) {
+          console.log('Accelerometer_gx', event.accelerationIncludingGravity.x);
+          console.log('Accelerometer_gy', event.accelerationIncludingGravity.y);
+          console.log('Accelerometer_gz', event.accelerationIncludingGravity.z);
+
+          console.log('Accelerometer_x', event.acceleration.x);
+          console.log('Accelerometer_y', event.acceleration.y);
+          console.log('Accelerometer_z', event.acceleration.z);
+
+          console.log('Gyroscope_z', event.rotationRate.alpha);
+          console.log('Gyroscope_x', event.rotationRate.beta);
+          console.log('Gyroscope_y', event.rotationRate.gamma);
+    }
+    </script>
   </body>
 </html>
