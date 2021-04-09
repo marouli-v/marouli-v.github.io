@@ -5,11 +5,14 @@
    <pr>Testing Sensors</pr>
    <script>
     
-     window.addEventListener('touchstart', function() {
-      var touch = 1;
-      console.log("touch");
-     });
-    
+    window.addEventListener("touchstart", touchstart, false);
+    addEventListener("touchend", touchend, false); 
+    function handleStart() {
+     cosnole.log("touch");
+    }
+    function touchend() {
+     cosnole.log("No touch");
+    }
      window.addEventListener("devicemotion", function(event) {
       
       var touch = 0;
