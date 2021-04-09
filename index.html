@@ -7,22 +7,20 @@
     
      window.addEventListener("devicemotion", function(event) {
       function is_touch_enabled() {
-            return ( 'ontouchstart' in window ) || 
-                   ( navigator.maxTouchPoints > 0 ) ||
-                   ( navigator.msMaxTouchPoints > 0 );
-        }
+            return 'ontouchstart' in window || navigator.maxTouchPoints;
+      }
       if( is_touch_enabled() ) {
             var touch = 0
-        }
-        else {
+      }
+      else {
             var touch = -2
-        }
+      }
       
       //var ts = Math.round((new Date()).getTime() / 1000)
       var ts = (new Date()).getTime() / 1000
       //bth
-      console.log(touch, ",", touch, "," ,", ACCEL,", ts, "," , event.acceleration.x, "," , event.acceleration.y , "," , event.acceleration.z);
-      console.log(touch, ",", touch, "," ,", GYRO,",  ts, "," , event.rotationRate.alpha , "," , event.rotationRate.beta , "," , event.rotationRate.gamma); 
+      console.log(touch, ",", touch, "," ,"ACCEL,", ts, "," , event.acceleration.x, "," , event.acceleration.y , "," , event.acceleration.z);
+      console.log(touch, ",", touch, "," ,"GYRO,",  ts, "," , event.rotationRate.alpha , "," , event.rotationRate.beta , "," , event.rotationRate.gamma); 
       //accel
       console.log('devicemotion.event.acceleration', event.acceleration.x , event.acceleration.y , event.acceleration.z);
       console.log('devicemotion.event.accelerationIncludingGravity', event.accelerationIncludingGravity.x , event.accelerationIncludingGravity.y, event.accelerationIncludingGravity.z);
