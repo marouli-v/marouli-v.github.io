@@ -7,10 +7,10 @@
     
     window.addEventListener("touchstart", touchstart, false);
     addEventListener("touchend", touchend, false); 
-    function handleStart() {
+    function touchstart() {
      cosnole.log("touch");
     }
-    function touchend() {
+     function touchend() {
      cosnole.log("No touch");
     }
      window.addEventListener("devicemotion", function(event) {
