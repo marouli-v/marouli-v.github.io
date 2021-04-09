@@ -7,7 +7,7 @@
      window.addEventListener("devicemotion", function(event) {
     
       //var ts = Math.round((new Date()).getTime() / 1000)
-      var ts = new Date()).getTime() / 1000
+      var ts = (new Date()).getTime() / 1000
       //bth
       console.log("0, 0 , ACCEL,", ts, "," , event.acceleration.x, "," , event.acceleration.y , "," , event.acceleration.z);
       console.log("0, 0 , GYRO,",  ts, "," , event.rotationRate.alpha , "," , event.rotationRate.beta , "," , event.rotationRate.gamma); 
