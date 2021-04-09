@@ -5,16 +5,13 @@
    <pr>Testing Sensors</pr>
    <script>
     
+     window.addEventListener('touchstart', function() {
+      var touch = 1;
+      console.log("touch");
+     });
+    
      window.addEventListener("devicemotion", function(event) {
-      function is_touch_enabled() {
-            return 'ontouchstart' in window || navigator.maxTouchPoints;
-      }
-      if( is_touch_enabled() ) {
-            var touch = 0
-      }
-      else {
-            var touch = -2
-      }
+      
       
       //var ts = Math.round((new Date()).getTime() / 1000)
       var ts = (new Date()).getTime() / 1000
