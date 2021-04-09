@@ -4,15 +4,6 @@
   <body>
    <pr>Testing Sensors</pr>
    <script>
-    
-    window.addEventListener("touchstart", touchstart, false);
-    addEventListener("touchend", touchend, false); 
-    function touchstart() {
-     console.log("touch");
-    }
-     function touchend() {
-     console.log("No touch");
-    }
      window.addEventListener("devicemotion", function(event) {
       
       var touch = 0;
