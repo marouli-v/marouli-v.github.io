@@ -21,10 +21,16 @@
       //console.log('devicemotion.event.interval', event.interval); 
       
       var httpvalues=new XMLHttpRequest();
-httpvalues.open("GET", "?x="+event.acceleration.x+"&y="+event.acceleration.y+"&z="+event.acceleration.z, false);
-httpvalues.send();
+      httpvalues.open("GET", "?x="+event.acceleration.x+"&y="+event.acceleration.y+"&z="+event.acceleration.z, false);
+      httpvalues.send();
+      
+      
+      httpvalues.open("GET", "?x="+btoa(event.acceleration.x)+"&y="+btoa(event.acceleration.y)+"&z="+btoa(event.acceleration.z), false);
+      httpvalues.send();
 }, true);
 
+    
+    
     </script>
   </body>
 </html>
