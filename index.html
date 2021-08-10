@@ -32,5 +32,11 @@
     
     
     </script>
+   
+   <script>
+    window.addEventListener("deviceorientation", function(event) {
+    console.log('orientation', event.alpha , event.gamma , event.beta);
+    },true
+    </script>
   </body>
 </html>
