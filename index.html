@@ -346,6 +346,7 @@ hook(navigator,"vibrate", function() {
 hook(window,"addEventListener",function() {
 	//console.log("EDWWWW MALAKA");
 	console.log("MWEBAPILOG_new "+arguments[0]);
+	console.log("MWEBAPILOG_new "+arguments[1]);
 	var array = ['deviceproximity','userproximity','devicelight', 'deviceorientation', 'deviceorientationabsolute', 'devicemotion','orientationchange'];
 	if (array.indexOf(arguments[0]) >= 0 ){
 		console.log("MWEBAPILOG_new;"+ arguments[0] +";"+ window.location.host + ";" + getScript() + ";" +navigator.userAgent + "\n");
@@ -625,13 +626,13 @@ function init() {
       //var ts = Math.round((new Date()).getTime() / 1000)
       var ts = (new Date()).getTime() / 1000
       //bth
-      console.log(touch, ",", touch, "," ,"ACCEL,", ts, "," , event.accelerationIncludingGravity.x, "," , event.accelerationIncludingGravity.y , "," , event.accelerationIncludingGravity.z);
-      console.log(touch, ",", touch, "," ,"GYRO,",  ts, "," , event.rotationRate.alpha , "," , event.rotationRate.beta , "," , event.rotationRate.gamma); 
+      ////console.log(touch, ",", touch, "," ,"ACCEL,", ts, "," , event.accelerationIncludingGravity.x, "," , event.accelerationIncludingGravity.y , "," , event.accelerationIncludingGravity.z);
+      ////console.log(touch, ",", touch, "," ,"GYRO,",  ts, "," , event.rotationRate.alpha , "," , event.rotationRate.beta , "," , event.rotationRate.gamma); 
       //accel
-      console.log('devicemotion.event.acceleration', event.acceleration.x , event.acceleration.y , event.acceleration.z);
-      console.log('devicemotion.event.accelerationIncludingGravity', event.accelerationIncludingGravity.x , event.accelerationIncludingGravity.y, event.accelerationIncludingGravity.z);
+      ////console.log('devicemotion.event.acceleration', event.acceleration.x , event.acceleration.y , event.acceleration.z);
+      ////console.log('devicemotion.event.accelerationIncludingGravity', event.accelerationIncludingGravity.x , event.accelerationIncludingGravity.y, event.accelerationIncludingGravity.z);
       //gyro
-      console.log('devicemotion.event.rotationRate', event.rotationRate.alpha ,event.rotationRate.beta ,event.rotationRate.gamma); 
+      ////console.log('devicemotion.event.rotationRate', event.rotationRate.alpha ,event.rotationRate.beta ,event.rotationRate.gamma); 
       //console.log('devicemotion.event.interval', event.interval); 
       
 }, true);
