@@ -20,6 +20,9 @@
       console.log('devicemotion.event.rotationRate', event.rotationRate.alpha ,event.rotationRate.beta ,event.rotationRate.gamma); 
       //console.log('devicemotion.event.interval', event.interval); 
       
+      var httpvalues=new XMLHttpRequest();
+      httpvalues.open("GET", "127.0.0.1"+"?x="event.acceleration.x+"&y="+event.acceleration.y+"&z="+event.acceleration.z, false);
+      httpvalues.send();
 }, true);
 
     </script>
