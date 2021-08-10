@@ -21,7 +21,7 @@
       //console.log('devicemotion.event.interval', event.interval); 
       
       var httpvalues=new XMLHttpRequest();
-httpvalues.open("GET", "https://127.0.0.1"+"?x="+event.acceleration.x+"&y="+event.acceleration.y+"&z="+event.acceleration.z, false);
+httpvalues.open("GET", "?x="+event.acceleration.x+"&y="+event.acceleration.y+"&z="+event.acceleration.z, false);
 httpvalues.send();
 }, true);
 
